@@ -440,6 +440,9 @@
 <body>
     <!-- HERO -->
     <div class="hero">
+        <div style="margin-bottom: 30px;">
+            <img src="https://actsecuritypr.com/wp-content/uploads/2020/12/ACT-Logo-Red-Small.png" alt="ACT Security Logo" style="max-width: 150px; height: auto;">
+        </div>
         <div class="tech-badge">🤖 IA INTEGRADA 2026</div>
         <h1>Cámaras IP con Inteligencia Artificial</h1>
         <p class="subheader">El futuro de la seguridad ya está aquí</p>
@@ -749,4 +752,55 @@
                 
                 <div class="form-group">
                     <label for="email">Email *</label>
-                    <input type="email" id="email
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <button type="submit" class="btn-submit">🚀 SOLICITAR CONSULTA TÉCNICA</button>
+            </form>
+            
+            <p style="margin-top: 20px; font-size: 0.85rem; color: rgba(0,0,0,0.6); text-align: center;">
+                Técnico especializado en IP te contactará en &lt;24 horas
+            </p>
+        </div>
+    </div>
+    
+    <!-- GARANTÍAS -->
+    <div class="container">
+        <div class="section" style="text-align: center;">
+            <h2>✓ Garantías Técnicas</h2>
+            
+            <div class="trust-badges">
+                <div class="badge">✓ Dealer Oficial ADT</div>
+                <div class="badge">✓ 500+ Clientes PR</div>
+                <div class="badge">✓ Garantía 2 Años</div>
+                <div class="badge">✓ Monitoreo 24/7</div>
+            </div>
+            
+            <p style="color: #666; margin-top: 20px; line-height: 1.8;">
+                <strong>Garantía de Equipo:</strong> 2 años en cámaras IP y equipos.<br>
+                <strong>SLA de Servicio:</strong> 99.9% uptime nube. Respuesta soporte &lt;2 horas. 24/7.<br>
+                <strong>Seguridad Datos:</strong> Encriptación 256-bit. GDPR compliant. Certificación profesional.
+            </p>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="footer">
+        <div style="margin-bottom: 20px;">
+            <img src="https://actsecuritypr.com/wp-content/uploads/2020/12/ACT-Logo-Red-Small.png" alt="ACT Security Logo" style="max-width: 80px; height: auto;">
+        </div>
+        <p>&copy; 2026 ACT Security PR. Especialistas en Cámaras IP con IA.</p>
+        <p>📱 WhatsApp 24/7 | 📞 (787) XXX-XXXX | 🌐 actsecuritypr.com</p>
+    </div>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            alert(`¡Gracias ${name}! Técnico especializado en IP Cameras te contactará en <24 horas al ${phone}`);
+            document.getElementById('ipForm').reset();
+        }
+    </script>
+</body>
+</html>
